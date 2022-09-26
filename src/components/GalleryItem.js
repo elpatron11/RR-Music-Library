@@ -31,7 +31,14 @@ function GalleryItem(props){
                 'backgroundSize': 'cover',
                 'color': 'white'
             }}>
+                  
+          
                 <h2>{props.item.trackName}</h2>
+                  <h3>
+                <a href={`/artist/${props.item.artistId}`}>
+                    {props.item.artistName}
+                </a>
+            </h3>
                 <h3>{props.item.collectionName}</h3>
                 <h4>{props.item.primaryGenreName}</h4>
                 <h4>{props.item.releaseDate}</h4>
